@@ -1,4 +1,6 @@
-﻿NAME: SANJNA RANI STUDENT ID:0769043 TOPIC: SanjnaBookShop
+﻿NAME: SANJNA RANI 
+STUDENT ID:0769043 
+TOPIC: SanjnaBookShop
 
 It’s a 9th of november 2021.
 
