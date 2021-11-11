@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SanjnasBooks.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SanjnasBookStore.Data
+namespace SanjnasBookStore.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -12,5 +13,6 @@ namespace SanjnasBookStore.Data
             : base(options)
         {
         }
+        public DbSet<Category> Categories { get; set; }
     }
 }
