@@ -2,7 +2,7 @@
 
 namespace SanjnasBooks.DataAccess.Migrations
 {
-    public partial class AddCategoryTodb : Migration
+    public partial class AddCategoryToDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

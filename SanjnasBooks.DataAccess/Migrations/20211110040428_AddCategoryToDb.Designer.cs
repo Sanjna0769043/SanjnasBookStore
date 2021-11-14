@@ -10,8 +10,8 @@ using SanjnasBookStore.DataAccess.Data;
 namespace SanjnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211110174118_AddCategoryTodb")]
-    partial class AddCategoryTodb
+    [Migration("20211110040428_AddCategoryToDb")]
+    partial class AddCategoryToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

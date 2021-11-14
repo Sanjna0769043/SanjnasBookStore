@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\Admin area\**" />
-    <Content Remove="Areas\Admin area\**" />
-    <EmbeddedResource Remove="Areas\Admin area\**" />
-    <None Remove="Areas\Admin area\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Abp" Version="6.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.10" />
@@ -29,10 +22,6 @@
     <ProjectReference Include="..\SanjnasBook.Utility\SanjnasBook.Utility.csproj" />
     <ProjectReference Include="..\SanjnasBooks.DataAccess\SanjnasBooks.DataAccess.csproj" />
     <ProjectReference Include="..\SanjnasBooks.Models\SanjnasBooks.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
   </ItemGroup>
 
 </Project>

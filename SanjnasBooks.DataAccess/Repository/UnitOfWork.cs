@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SanjnasBooks.DataAccess.Repository
 {
-    public class UnitOfWork        //make the method public to access the class
+    public class UnitOfWork : IUnitOfWork      //make the method public to access the class 
     {
-        private readonly ApplicationDbContext _db;   // the using statement
+        private readonly ApplicationDbContext _db;   // the using statement 
 
         public UnitOfWork(ApplicationDbContext db)   // constructor to use DI and inject in the repository
         {

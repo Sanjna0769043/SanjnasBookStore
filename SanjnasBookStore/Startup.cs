@@ -1,4 +1,3 @@
-using Abp.Domain.Uow;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SanjnasBooks.DataAccess.Repository;
+using SanjnasBooks.DataAccess.Repository.IRepository;
 using SanjnasBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ namespace SanjnasBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddScoped<UnitOfWork, UnitOfWork>();
+             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 

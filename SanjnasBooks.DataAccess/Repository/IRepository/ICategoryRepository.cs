@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SanjnasBooks.DataAccess.Repository.IRepository
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
         void Update(Category category);
     }

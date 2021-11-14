@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SanjnasBooks.DataAccess.Repository.IRepository
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class 
     {
         T Get(int Id);
 
@@ -22,10 +22,14 @@ namespace SanjnasBooks.DataAccess.Repository.IRepository
             string includeProperties = null
 
             );
+
         void Add(T entity);
+
         void Remove(int id);
         void Remove(T entity);
+
         void RemoveRange(IEnumerable<T> entity);
+
 
     }
 }

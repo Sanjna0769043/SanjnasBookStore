@@ -1,13 +1,13 @@
-﻿using Dapper;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using SanjnasBooks.DataAccess.Repository.IRepository;
+﻿using SanjnasBooks.DataAccess.Repository.IRepository;
 using SanjnasBookStore.DataAccess.Data;
+using Dapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace SanjnasBooks.DataAccess.Repository
 {
@@ -18,7 +18,7 @@ namespace SanjnasBooks.DataAccess.Repository
         private static string ConnectionString = ""; //needed the called the storage prdocdure
         private string procedureName;
 
-        // contructor to open a sql connection
+        // contructor to open a sql connection 
 
         public SP_Call(ApplicationDbContext db)
         {
@@ -28,12 +28,12 @@ namespace SanjnasBooks.DataAccess.Repository
         // implement the ISP_Call interface
         public void Dispose()
         {
-            _db.Dispose();
+              _db.Dispose();
         }
 
         public void Execute(string procedureName, DynamicParameters param = null)
         {
-            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+           using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
                 sqlCon.Execute(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
@@ -41,7 +41,7 @@ namespace SanjnasBooks.DataAccess.Repository
         }
         public IEnumerable<T> List<T>(string procedurename, DynamicParameters param = null)
         {
-            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+           using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
                 return sqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
@@ -58,7 +58,7 @@ namespace SanjnasBooks.DataAccess.Repository
                 var item1 = result.Read<T1>().ToList();
                 var item2 = result.Read<T2>().ToList();
 
-                if (item1 != null && item2 != null)
+                if(item1 != null && item2 !=null)
                 {
                     return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
                 }
@@ -66,7 +66,7 @@ namespace SanjnasBooks.DataAccess.Repository
             return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(new List<T1>(), new List<T2>());
         }
 
-
+       
         public T OneRecord<T>(string produrename, DynamicParameters param = null)
         {
             using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
@@ -86,4 +86,4 @@ namespace SanjnasBooks.DataAccess.Repository
             }
         }
     }
-}
+} 

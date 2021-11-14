@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SanjnasBooks.DataAccess.Repository
-{
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+{ 
+    public class CategoryRepository : Repository<Category>, ICategoryRepository 
     {
         private readonly ApplicationDbContext _db;
 

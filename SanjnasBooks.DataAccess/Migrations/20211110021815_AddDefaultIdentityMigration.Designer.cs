@@ -10,8 +10,8 @@ using SanjnasBookStore.DataAccess.Data;
 namespace SanjnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211110172314_AddDefaultMigration")]
-    partial class AddDefaultMigration
+    [Migration("20211110021815_AddDefaultIdentityMigration")]
+    partial class AddDefaultIdentityMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

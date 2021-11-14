@@ -13,7 +13,7 @@ namespace SanjnasBooks.DataAccess.Repository
     public class Repository<T> : IRepository<T> where T : class
     {
         // modify the database w/ the db context
-        private readonly ApplicationDbContext _db;      // get the db instance using the constructor and DI
+        private readonly ApplicationDbContext _db;      // get the db instance using the constructor and DI 
         internal DbSet<T> dbSet;
         public Repository(ApplicationDbContext db)     // use hot keys C-T-O-R to build the constructor
         {
