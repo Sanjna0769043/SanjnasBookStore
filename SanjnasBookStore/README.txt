@@ -207,11 +207,12 @@ part B has began… and working on Database. First I checked the project to conf
 
 8:46 PM: While adding Add-Migration AddDefaultMigration by using NuGet Package manager.
 
-8:47 PMGot an error which is: Your target project 'SanjnasBookStore' doesn't match your migrations assembly 'SanjnasBooks.DataAccess'. 
+8:47 PMGot an error which is: 
+Your target project 'SanjnasBookStore' doesn't match your migrations assembly 'SanjnasBooks.DataAccess'. 
 Either change your target project or change your migrations assembly. Change your migrations assembly by using DbContextOptionsBuilder.
 E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("SanjnasBookStore")). By default, the migrations assembly is the assembly containing the DbContext.
 
-8:47: PM: I find the error reason. And I change and select the correct project as default
+8:47: PM: I find the error reason. And I change and select the correct project as default to SanjnaBookStore to SanjnaBookStore.DataAccess
 
 Again I run the package and it worked ………………………….woaaaa
 
@@ -235,6 +236,8 @@ There is a small update in the file ApplicationdbContent.cs
 To check its working again add the build command to check error is any
 
 9: 40 PM: waooo work fine and smooth without error….. happy 
+
+9:42 Pm : i check the agin tables after updating the database , the new  categories table are added in the database.
 
 9: 45 PM: lets began next step which is add Repository but first taking a coffee break
 
