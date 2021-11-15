@@ -307,3 +307,9 @@ Still finding……………solution
 11 Nov at 10 AM
 i start to find the last error to complete the data  , oh i find my silly error , i forget to write the using statement now feel happy.
 done with part2.
+12 novmber 10AM, morning time
+Now continue the assignment’s part 2, category CRDU
+With in a Admin->Controller create a new MVC  controller inside it as   CategoryController.cs. write the all provided code as per the tutorial and solve the error by using statements.(10:07AM)
+After that add a new category folder inside the View folder and further category folder added a View->razor view . then one new slide open fille the file name->Index and path of the file(10:15Am)
+The new Index.cshtml file open I posted the given code into the file.(10:25AM)
+
