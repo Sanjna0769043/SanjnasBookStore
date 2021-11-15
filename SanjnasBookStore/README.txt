@@ -313,3 +313,25 @@ With in a Admin->Controller create a new MVC  controller inside it as   Category
 After that add a new category folder inside the View folder and further category folder added a View->razor view . then one new slide open fille the file name->Index and path of the file(10:15Am)
 The new Index.cshtml file open I posted the given code into the file.(10:25AM)
 
+(10:35Am) i just hold my heart and click on the IIS Express button to run my project. thank to god i got the same output according the given tutorial.
+(10:37Am) open the layout.cshtml page to update the dropdown menu with latest entry category. plus i comment the code of navigation bar of category because i just only want to show the 
+category option in the dropdown rather than the navigation.
+(10:42AM) review the modification and see on the crome , well everythink work perfect.
+(10:45AM) its a morning time so need a break to prepare my breakfast. 
+
+(3:00PM),  13 november , afternoon
+sorry cannot spend alot time on this assignment because i have to focuse on the the another assignment too, 
+
+(3:02 PM) modify the Index.cshtml file to , here i add a new icon for the category file through font Awesome web site. this site have a large collection of icons paid and free for users.
+(3:25PM) after selecting the icon for my category file i posted a code in the Index.cshtml file.
+
+now, building the project without error make me happy :)
+
+(3:30PM) run the project to check its working on the right way or not.
+
+(3:35PM) Read the slides carefully beacuse this is the end of the part2 sildes so want to finish without error.
+(3:40PM)  upload the given Category.js file in the wwwroot->lib->js folder.
+(3:47PM) delete the bottom code of the icon in the Index,cshtml file and remove it with the script code as per follwed by the tutorial/slides.
+(4:00PM) This is a last slides, click the IIS Express button to fetch my final outcome.
+(4:02PM) yupppppppppppppppeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.
+(4:03PM) got my desire output not get any default data base entry.
