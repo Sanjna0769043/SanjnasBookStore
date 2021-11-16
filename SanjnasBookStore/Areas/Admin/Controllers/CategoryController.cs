@@ -29,6 +29,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
                 // this is for create
                 return View(category);
             }
+          
             //this for the edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
             if (category == null)
