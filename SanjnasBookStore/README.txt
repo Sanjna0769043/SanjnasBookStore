@@ -231,7 +231,7 @@ New code has added in tho class file as per given.
 
 Add-migration AddCategoryTodb is it worked… 
 
-There is a small update in the file ApplicationdbContent.cs
+There is a small update in the file ApplicationdbContent.cs as well as the new files automatically loaded into the migration folder.
 
 To check its working again add the build command to check error is any
 
