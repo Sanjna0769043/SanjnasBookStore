@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SanjnasBooks.Models;
 
 namespace SanjnasBookStore.Areas.Admin.Controllers
 {
@@ -18,6 +19,22 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            return View();
+        }
+        public IActionResult Upsert(int? id)    //action method for Upsert
+        {
+            Category category = new Category();
+            if (id == null)
+            {
+                // this is for create
+                return View(category);
+            }
+            //this for the edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
             return View();
         }
         #region API CALLS
