@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace SanjnasBooks.DataAccess.Repository.IRepository
 {
-    public interface ICoverTypeRepository : IRepository<coverType>
+    public interface ICoverTypeRepository : IRepository<CoverType>
     {
-        void Update(ICoverTypeRepository coverType);
+        void Update(CoverType coverType);
     }
 }
