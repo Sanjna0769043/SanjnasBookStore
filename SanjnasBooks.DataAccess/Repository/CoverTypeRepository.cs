@@ -15,6 +15,14 @@ namespace SanjnasBooks.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(CoverTypeRepository coverType)
+        public void Update(CoverType coverType)
+        {
+            var objFormDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
+            if (objFromdb != null)
+            {
+                objFromDb.Name = coverType.Name;
+                _db.SaveChanges();
+            }
+        }
     }
 }
