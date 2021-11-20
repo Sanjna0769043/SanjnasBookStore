@@ -29,10 +29,10 @@
                         <!--<li class="nav-item">
         <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
     </li>-->
-                        <!-- remove the category to navigation because a give the category link in the dropdown-->
+                        <!-- remove the category to navigation because a give the category link in the dropdown-
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Cover Type" asp-action="Index">Cover Type</a>
-                        </li>
+                        </li>   -->
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,8 +40,8 @@
                             </a>
                             <div class="dropdown-menu bg-primary text-light" aria-labelledby="navbarDropdown">
                                 <a class=" dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
-                                <!-- <a class="dropdown-item" href="#">Action</a>-->
-                                <a class="dropdown-item" href="#">Another action</a>
+
+                                <a class=" dropdown-item" asp-area="Admin" asp-controller="Cover Type" asp-action="Index">Cover Type</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
@@ -67,11 +67,11 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <!--additional scripts to used-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+                        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                        <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+                        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
