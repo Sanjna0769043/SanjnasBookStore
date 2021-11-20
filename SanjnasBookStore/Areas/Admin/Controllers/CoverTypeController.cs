@@ -22,26 +22,70 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             {
                 return View();
             }
-            
-            #region API CALLS
-            [HttpGet]
+
+        public IActionResult Upsert(int? id)    //action method for Upsert
+        {
+            CoverType coverType = new CoverType();
+            if (id == null)
+            {
+                // this is for create
+                return View(coverType);
+            }
+
+            //this for the edit
+            coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
+            if (coverType == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
+        //use HTTP POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert(CoverType coverType)
+        {
+            if (ModelState.IsValid)     // checks all validations in the model
+            {
+                if (coverType.Id == 0)
+                {
+                    _unitOfWork.CoverType.Add(coverType);
+
+                }
+                else
+                {
+                    _unitOfWork.CoverType.Update(coverType);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index)); // to see all the categories
+
+
+            }
+            return View(coverType);
+        }
+
+
+        #region API CALLS
+        [HttpGet]
             public IActionResult GetAll()
             {
                 var allObj = _unitOfWork.Category.GetAll();
                 return Json(new { data = allObj });
             }
-           /* [HttpDelete]
+           [HttpDelete]
             public IActionResult Delete(int id)
             {
-                var objFromDb = _unitOfWork.Category.Get(id);
+                var objFromDb = _unitOfWork.CoverType.Get(id);
                 if (objFromDb == null)
                 {
                     return Json(new { sucess = false, message = "Error while deleting " });
                 }
-                _unitOfWork.Category.Remove(objFromDb);
+                _unitOfWork.CoverType.Remove(objFromDb);
                 _unitOfWork.Save();
                 return Json(new { sucess = true, message = "Delete successful" });
-            } */
+            } 
 
             #endregion
         }

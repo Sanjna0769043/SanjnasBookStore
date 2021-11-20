@@ -36,7 +36,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View();
+            return View(category);  // add a category by own
         }
 
         //use HTTP POST to define the post-action method
