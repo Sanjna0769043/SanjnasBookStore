@@ -9,6 +9,6 @@ namespace SanjnasBooks.DataAccess.Repository.IRepository
 {
     interface IProductRepository : IRepository<Product>
     {
-        void Update(ProductRepository product)
+        void Update(ProductRepository product);
     }
 }
