@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SanjnasBooks.DataAccess.Repository.IRepository;
 using SanjnasBooks.Models;
 using System;
 using System.Collections.Generic;
@@ -21,49 +22,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             {
                 return View();
             }
-            public IActionResult Upsert(int? id)    //action method for Upsert
-            {
-            CoverType coverType = new CoverType();
-                if (id == null)
-                {
-                    // this is for create
-                    return View(coverType);
-                }
-
-            //this for the edit
-            coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
-                if (coverType == null)
-                {
-                    return NotFound();
-                }
-                return View();
-            }
-
-            //use HTTP POST to define the post-action method
-            [HttpPost]
-            [ValidateAntiForgeryToken]
-
-            public IActionResult Upsert(CoverType coverType)
-            {
-                if (ModelState.IsValid)     // checks all validations in the model
-                {
-                    if (coverType.Id == 0)
-                    {
-                        _unitOfWork.Category.Add(coverType);
-
-                    }
-                    else
-                    {
-                        _unitOfWork.Category.Update(coverType);
-                    }
-                    _unitOfWork.Save();
-                    return RedirectToAction(nameof(Index)); // to see all the categories
-
-
-                }
-                return View(coverType);
-            }
-
+            
             #region API CALLS
             [HttpGet]
             public IActionResult GetAll()
