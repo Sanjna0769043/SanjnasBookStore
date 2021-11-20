@@ -1,4 +1,4 @@
-var dataTable;
+﻿var dataTable;
 
 $(document).ready(function () {
     loadDataTable();
@@ -8,7 +8,7 @@ $(document).ready(function () {
 function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": {
-            "url": "/Admin/Category/GetAll"
+            "url": "/Admin/Covertype/GetAll"
         },
         "columns": [
             { "data": "name", "width": "60%" },
@@ -17,10 +17,10 @@ function loadDataTable() {
                 "render": function (data) {
                     return `
                             <div class="text-center">
-                                <a href="/Admin/Category/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                                <a href="/Admin/Covertype/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                                     <i class="fas fa-pen-nib"></i>&nbsp;
                                 </a>
-                                <a onclick=Delete("/Admin/Category/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
+                                <a onclick=Delete("/Admin/Covertype/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
                                     <i class="far fa-trash-alt"></i>&nbsp;
                                 </a>
                             </div>
