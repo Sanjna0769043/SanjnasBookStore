@@ -10,8 +10,8 @@ using SanjnasBookStore.DataAccess.Data;
 namespace SanjnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211120181614_AddCoverTypeToDb")]
-    partial class AddCoverTypeToDb
+    [Migration("20211120215758_AddProductToDb")]
+    partial class AddProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -221,6 +221,41 @@ namespace SanjnasBooks.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("SanjnasBookStore.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CoverTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ISBN")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Products");
+                });
+
             modelBuilder.Entity("SanjnasBooks.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -304,6 +339,25 @@ namespace SanjnasBooks.DataAccess.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SanjnasBookStore.Product", b =>
+                {
+                    b.HasOne("SanjnasBooks.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SanjnasBooks.Models.CoverType", "CoverType")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("CoverType");
                 });
 #pragma warning restore 612, 618
         }
