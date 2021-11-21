@@ -24,16 +24,16 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)    //action method for Upsert
         {
-            Product coverType = new Product();
+            Product product = new Product();
             if (id == null)
             {
                 // this is for create
-                return View(coverType);
+                return View(product);
             }
 
             //this for the edit
-            coverType = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (coverType == null)
+            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if (product == null)
             {
                 return NotFound();
             }
