@@ -24,8 +24,4 @@
     <ProjectReference Include="..\SanjnasBooks.Models\SanjnasBooks.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Product\" />
-  </ItemGroup>
-
 </Project>
