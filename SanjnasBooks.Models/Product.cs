@@ -32,6 +32,6 @@ namespace SanjnasBookStore
         public int CoverTypeId { get; set; }
         [ForeignKey("CategoryId")]
         public CoverType CoverType { get; set; }
-        public object Name { get; set; }
+        
     }
 }
