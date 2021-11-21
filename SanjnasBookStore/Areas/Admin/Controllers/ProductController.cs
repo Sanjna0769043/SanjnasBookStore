@@ -22,6 +22,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        /*
         public IActionResult Upsert(int? id)    //action method for Upsert
         {
             Product product = new Product();
@@ -64,7 +65,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             }
             return View(product);
         }
-        
+        */
 
         #region API CALLS
         [HttpGet]
@@ -73,6 +74,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             var allObj = _unitOfWork.Product.GetAll();
             return Json(new { data = allObj });
         }
+        /*
         [HttpDelete]
         public IActionResult Delete(int id)
         {
@@ -84,7 +86,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { sucess = true, message = "Delete successful" });
-        }
+        } */
         
         #endregion
     }
