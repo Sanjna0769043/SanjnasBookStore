@@ -50,12 +50,12 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             {
                 if (product.Id == 0)
                 {
-                    _unitOfWork.product.Add(product);
+                    _unitOfWork.Product.Add(product);
 
                 }
                 else
                 {
-                    _unitOfWork.CoverType.Update(product);
+                    _unitOfWork.Product.Update(product);
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index)); // to see all the categories
