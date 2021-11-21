@@ -22,7 +22,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        /* public IActionResult Upsert(int? id)    //action method for Upsert
+        public IActionResult Upsert(int? id)    //action method for Upsert
         {
             Product coverType = new Product();
             if (id == null)
@@ -38,7 +38,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
                 return NotFound();
             }
             return View();
-        }
+        } 
 
         //use HTTP POST to define the post-action method
         [HttpPost]
@@ -64,7 +64,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             }
             return View(product);
         }
-        */
+        
 
         #region API CALLS
         [HttpGet]
@@ -73,7 +73,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             var allObj = _unitOfWork.Product.GetAll();
             return Json(new { data = allObj });
         }
-        /*[HttpDelete]
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Product.Get(id);
@@ -85,7 +85,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { sucess = true, message = "Delete successful" });
         }
-        */
+        
         #endregion
     }
 
