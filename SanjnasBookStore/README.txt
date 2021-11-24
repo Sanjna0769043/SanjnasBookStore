@@ -307,6 +307,7 @@ End time–(5:40PM)--, total time spend on this part (2 hours)
 2021-11-23, start time -6:42Pm……………………………………..
 (6:49 PM) craetec the class ProductRepository under the Reposiotoy folder ,  first few code I take it from the previous slides the additional one already given by Andrew , solve the error by using statements as well as implemtented the inteface as well. (7:00 PM)
 (7:01 PM) update the UnitOfwork and IunitOfWork files with Product code (7:15PM)
+
 (7:17 PM) create a new productController under the Area->Admin->Controller folder and perform some CRUD operations., next added the IwebHostEnvironment call  and remove the red error by using the MicroSoft.AspNetCoreHosting statement . (7:22 PM)
 (7:30 PM) created a new ProductVM class under the ViewModels folder , and installed a new Microsoft.AspNetCore.Mvc feature package by clicking on the yellow indiccation on the screen.(7:42 PM)
 (8:00 Pm) modify the ProductController under the Admin->Controller folder, the ActionResult Upsert calls to the ProductVM view model and install new using statement ” MicroSoft.AspNetCore.Mvc.Rendering “ (8:20PM)
@@ -316,7 +317,7 @@ End time–(5:40PM)--, total time spend on this part (2 hours)
 (9:00 PM) add the new link under the Layout.cshtml page  and run the application , the new Product List show upon the sceen.(9:10PM)
 (9:10 Pm) now done with the Assignment 2_part 3 (section 2) (9:12PM)
 End time: (9:15 Pm)
-Total time spend on this part: (3 hours)
+Total time spend on this part: (3 hours) happy:)
 
 
 

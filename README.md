@@ -33,11 +33,16 @@ TOPIC:  SanjnaBookShop
 *-----------( 9 november brake time 10:40AM) , total time  40 mintues.----------------* 
 
 
+
+
+
 *------------Now its 11AM,  I am working on to add projects to my main projects--------------*
 
 28.	(11:00AM)     According to the tutorial there are three projects have to added:(
 29.	SanjansBookStoredataAccess, SanjansBookStoreModify and SanjansBookStoreUtility
+
 30.	(11:13AM)To use it I followed add new project and I renamed it as given according the slides.(11:18AM)
+
 31.	(11:20 AM),  9 nov 2021  
 32.	 I add package Microsoft.EntityFrameworkCore.Relational 
 33.	Microsoft.EntityFrameworkCore.Relational
@@ -93,6 +98,7 @@ TOPIC:  SanjnaBookShop
 65.	(11:00AM)   Again start with new vibes but with same errors. (11:10AM)
 66.	 Today I start with review the all code again to find my error. Can’t get any solution …..
 67.	Spend my whole day to fix my error but can’t get any solution .
+
 68.	(2021-22-07),( 11:28 ) Sunday morning
 69.	I start my assignment Again and follwed the same line1 to line 58, still here everything runing smooth. 
 70.	after continuesly work on the assignment , I feel tired, so time to take a 15 mintues break to freshup.
@@ -306,15 +312,25 @@ End time–(5:40PM)--, total time spend on this part (2 hours)
 
 2021-11-23, start time -6:42Pm……………………………………..
 (6:49 PM) craetec the class ProductRepository under the Reposiotoy folder ,  first few code I take it from the previous slides the additional one already given by Andrew , solve the error by using statements as well as implemtented the inteface as well. (7:00 PM)
+
 (7:01 PM) update the UnitOfwork and IunitOfWork files with Product code (7:15PM)
+
 (7:17 PM) create a new productController under the Area->Admin->Controller folder and perform some CRUD operations., next added the IwebHostEnvironment call  and remove the red error by using the MicroSoft.AspNetCoreHosting statement . (7:22 PM)
+
 (7:30 PM) created a new ProductVM class under the ViewModels folder , and installed a new Microsoft.AspNetCore.Mvc feature package by clicking on the yellow indiccation on the screen.(7:42 PM)
+
 (8:00 Pm) modify the ProductController under the Admin->Controller folder, the ActionResult Upsert calls to the ProductVM view model and install new using statement ” MicroSoft.AspNetCore.Mvc.Rendering “ (8:20PM)
+
 (8:20 PM) comment out the upser post method in the code and update the API call to include the Category and CoverType. (8:30 PM)
+
 (8:30 PM) Created a new product.js file under the wwwroot->js folder with functionalty as used in category.js  just modify the url to point the Product(8:40Pm)
+
 (8:40 pm) add the new Index View Page under the admin->View folder  by selecting the option Layout page. After that copy the code of Index.cshtml from Views/Category and modify to the Product List header, create  the new title, ISBN, Author, category and at the end refered by new product.js file.(8:55PM)
+
 (9:00 PM) add the new link under the Layout.cshtml page  and run the application , the new Product List show upon the sceen.(9:10PM)
+
 (9:10 Pm) now done with the Assignment 2_part 3 (section 2) (9:12PM)
+
 End time: (9:15 Pm)
 Total time spend on this part: (3 hours)
 
