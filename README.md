@@ -1,7 +1,9 @@
 NAME: SANJNA RANI
 STUDENT ID:0769043
 TOPIC:  SanjnaBookShop
+
 *------------------------------Part 1 start date ( November 2021)---------------------------------*
+
 1.	10:00”o clock in the morning.
 2.	 my topic is SanjnaBookShop
 3.	(10:02AM)  Now first I create a new folder name SanjnaBookShop in the visiual studio code 2019 according to the given toutorial.(10:02AM)
@@ -104,25 +106,33 @@ TOPIC:  SanjnaBookShop
 70.	after continuesly work on the assignment , I feel tired, so time to take a 15 mintues break to freshup.
 71.	Its (12PM), Coming from break with energy to finish the project 
 72.	Same I followind the futhersteps
+
 73.	 Again line59  no throught delete the defulted class1.cs in the all project. 
 74.	(12:10 Pm), build the project. 
 75.	Next step move to the SanjnasBookStore.Model->Shared and than modify the Error.cshtml .
 76.	(12:30PM), rename the models folder to ViewModels folder as well as modify the namespace of ErrorModels.cs folder to Models.ViewModels. perfect. 
 77.	Build the project………..taking time to build…………….wao its work 
 78.	Take a 5mintue break for the drink.
-79.	(12:40Pm), now time to modify the main startup.cs file , cut the same amount of code as given in the tutorial , I did not found any error  while running the project . my project work good.
-80.	 (1PM ), now in the utitly project  created a new class named with SD.cs. and do some changes in the class properities , like write public static in front of the class name.
+
+79.	(12:40Pm), now time to modify the main startup.cs file , cut the same amount of code as given in the tutorial , I did not found any error  while                  running the project . my project work good.
+
+80.	 (1PM ), now in the utitly project  created a new class named with SD.cs. and do some changes in the class properities , like write public static in               front of the class name.
+
 81.	After this add the projrct refrences to the main project by using the all three projects.
 82.	. Futher, in the DataAccess project selected sanjnasBookStore.Models and . SanjnasBookStore.Utility name.
 83.	Now right click on the area then add a new customer area.
+
 84.	Did some Change in the rought in startup.cs like the one outline in the ScaffoldingReadMe.txt.
 85.	(1:20PM), click to the HomeController.cs file than Area file under Customer  and controller folder and delete the data and Models folder.
 86.	  Open the HomeController under the View folder and do some changes under the namespace by writing the   [Area(“Customer”)].
 87.	(2PM, 07 Nov 2021)
-88.	The master page defined in the viewStart under the Views, now copy the viewImport and viewstart to customer Area. Open the viewStart.cshtml file and reflect the new path  which is : “Layout = “~/View/Shared/Layout.cshtml”; ”
+
+88.	The master page defined in the viewStart under the Views, now copy the viewImport and viewstart to customer Area. Open the viewStart.cshtml file and           reflect the new path  which is : “Layout = “~/View/Shared/Layout.cshtml”; ”
 89.	Run the project . its working .
+
 90.	(2:13PM),
-91.	Add one more Admin Area under the Area folder. Add the perfect view file and delete the data folder and models folder. As well as delete the Controller folder too.
+91.	Add one more Admin Area under the Area folder. Add the perfect view file and delete the data folder and models folder. As well as delete the          Controller folder too.
+
 92.	 Update all this info to the github.(2:35PM)
 93.	Finally done the part1 of the assignment ,after facing so much difficulties and red error  , I am happy
 
@@ -132,14 +142,20 @@ TOPIC:  SanjnaBookShop
 
 94.	PART B START 
 95.	(8:40 PM:  8November 2021)
+
 96.	part B has began… and working on Database. First I checked the project to confirm the exsisting project to error free and build success. (8:41PM)
 97.	(8:42 PM):   review the appsetting.json file and add database name in the json file as giving in tutorial   (8:43PM)s
+
 98.	(8:46 PM):  While adding  Add-Migration AddDefaultMigration by using NuGet Package manager.  (8:46PM)
-99.	(8:47 PM) Got an error which is: Your target project 'SanjnasBookStore' doesn't match your migrations assembly 'SanjnasBooks.DataAccess'. Either change your target project or change your migrations assembly. Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("SanjnasBookStore")). By default, the migrations assembly is the assembly containing the DbContext. 
+
+99.	(8:47 PM) Got an error which is: Your target project 'SanjnasBookStore' doesn't match your migrations assembly 'SanjnasBooks.DataAccess'. Either             change your target project or change your migrations assembly. Change your migrations assembly by using DbContextOptionsBuilder. E.g.            options.UseSqlServer(connection, b => b.MigrationsAssembly("SanjnasBookStore")). By default, the migrations assembly is the assembly containing             the DbContext.  
+
 100.	(8:47: PM): I find the error reason. And I change and select the correct project as default 
 101.	Again I run the package and it worked ………………………….woaaaa
+
 102.	(8:55 PM): The migration is completed and data base is update  by the following command:   (9:00PM)
 103.	 Update-databse
+
 104.	 (9:02 PM): after the database upadation I review the SQL server in Obejct Explore carefully and run the application.(9:10PM)
 105.	 I am taking dinner break………………….
              *---------------  (8:40PM to 9:10PM) 8November , consumed time= 1 hour----------------*
@@ -150,16 +166,23 @@ TOPIC:  SanjnaBookShop
 
 106.	(9:30PM)   I create a new class file under SanjnasBooks.Models named as Category.cs
 107.	New code has added in tho class file as per given.   (9:31PM)
+
 108.	(9:35 PM): now time to add antother migration package by PM Console
 109.	Add-migration AddCategoryTodb  is it worked… 
 110.	There is a small update in the file ApplicationdbContent.cs  (9:39PM)
+
 111.	To check its working again add the build command to check error is any
 112.	(9: 40 PM): waooo work fine and smooth without error….. happy   
+
 113.	(9: 45 PM): lets began next step which is add Repository but first taking a coffee break (9:47PM)
+
 114.	(9:50PM)   So begen the futher part with Repository 
+
 115.	After creating the Category.cs file and than it added into the ApplicationdbContext with some modification functionality example getting a record in the DataAccess priject. (9:55PM)
+
 116.	(9:59PM)  Under the DataAccess project add a new Repository folder as well as  one more folder Irepository under the Repository folder.
 117.	(10:PM) (8 Nov 2021)
+
 118.	UNDER the Irepository folder added a new item of interface and names  it Irepository.cs, modify it according to the given inductions.
 119.	So, right click on the Repository folder to add a new class repository.cs.
 120.	Include the using statements according the code and right click on the error than click the potential fixes and cluck on the implement interface.
@@ -174,9 +197,12 @@ TOPIC:  SanjnaBookShop
 124.	Start with slide 8 , continues the last day work.  (9:35PM)
 125.	 (9:36PM)  Open the categoryRepositiry.cs file and do some changes on it , according to the instruction I added a new using statements on the file. (9:40PM)
 126.	(9:40 Am)   Open the Icategoryrepository.cs file and modfiy the file as per the tutorial. Like implement the interface to update. Complete all the code and fixed all the error as per the commands and it take almost 25 mintues to write the code.  (9:50PM)
+
 127.	(9:55PM)   In the Irepository folder added new interface name ISP_Call.cs,  and add a dapper   using the Nuget package.(10:00Pm)
+
 128.	(10:10PM)  Added new class under the repository folder ISP_Call. Did small modification in the class and implement the interface on the file. Further , add the connection to the database with additional using statements.
 129.	Update the implementation of ISP_Call interface.(10:25PM)
+
 130.	Now add the wrapper for unit of work
      
      *--------------------- Started at 9:30 and finieshed at 10:30PM, total time consumed=  1 hour--------------------*
@@ -191,17 +217,21 @@ TOPIC:  SanjnaBookShop
 132.	Inside the Repository folder create/add a new class UnitOfWork. 
 133.	Did some modification inside the class las per the given code I copy all the code as per the instruction and add a new using statements too in the file to remove the error.
 134.	Wao I complete the whole project just startup.cs file pending .  (10:35AM)
+
 135.	Done for the today , need to focus on the another assignments too.
 136.	(10 nov 11AM)
 137.	Just left with startup.cs file to complete the project.
 138.	(10:00PM)    Let open the file first , ohh there is only one line to write on this file which is :
 139.	Services.addScoped<IunitOfwork, unitOfWork>();(10:15PM)
+
 140.	I write this line on the file but got an error oh no 
 141.	I show that the name sapce UnitOfWork is missing,,,,,,,
 142.	Spending 15mintues to solve the erroe but did not get any good solution ,
 143.	Still finding……………solution (10:47PM)
+
 144.	Take a break  for 10 minutes 
 145.	(11:00PM)   After coming from the break a check code again and I found my silly mistake that I donot use the using statement ,,, now all error resolve finally.(11:20PM)
+
 146.	Done with Part2 (1)
 *----------------------- End time 11:30PM, total time consumed= 1hour-----------------------*
 
@@ -211,26 +241,44 @@ TOPIC:  SanjnaBookShop
 
 
       *-----------------------(12 novmber 2021) ( 10AM), morning time----------------------------*
+
 147.	(10:00AM)   Now continue the assignment’s part 2, category CRDU(10:02AM)
+
 148.	With in a Admin->Controller create a new MVC  controller inside it as   CategoryController.cs. write the all provided code as per the tutorial and solve the error by using statements.(10:07AM)
+
 149.	(10:08AM)   After that add a new category folder inside the View folder and further category folder added a View->razor view . then one new slide open fille the file name->Index and path of the file(10:15Am)
+
 150.	(10:18AM)    The new Index.cshtml file open I posted the given code(Index.cshtml) into the file.(10:25AM)
+
 151.	(10:34AM)  now it’s a time to press the ISS Express button to check the output. Wao  finally see good result after so many time.  (10:36AM)
+
 152.	(10:38AM) add the new folder category under the view folder .(10:37AM)
+
 153.	(10:40AM) in the Layout.cshtml file to modify the category code to display the catogry in the home page. (10:50AM)
+
 154.	(11:00AM) now  edit the code in the layout page first I commant out the category navigation bar in the layout.cshtml file because I only need a category in the dropdown. So I enter a new code  in the dropdown menu.  (11:08AM)
+
 155.	(11:10AM)  time to check the dropdown in the project so run the project and see the changes. Finally good thinks happen with me :)  (11:10AM)
 156.	(11:00AM) morning,  need a time to prepare my breakfast.
+
 157.	(**************13 november 2021*******************)
+
 158.	(11:00AM): cannot spend more time to ASP assignement because I ha ve to focuse on the another assignment because that is also important as asp.  (11:00Am)
+
 159.	(11:00AM) modigy the Index.cshtml file with latest icon through Font AWEsome website which has a large collection of icon. So I choose my own icon.
 160.	(11:13AM) after choosing my own icon I pasted it on the Index.cshtm file.(11: 20AM)
+
 161.	 (11:20AM) now I insert the category.js file which was given by the Andrew in the assignment folder. That file insert into the wwwroot folder under the js folder.  (11:25AM)
+
 162.	(11:30AM) after checking all , I delete the bottom icon code of Index.cshtml file and pasted a @section code .  (11:35am)
+
 163.	(11:36AM) now it’s a time to finally fetch my desire outcome after facing the numbered of error . I click the ISS Express  button . (11:36AM)
+
 164.	(11:37AM) yyyyyyyyyyuuuuuuuuuuuuuupppppppppppppppppppppppppppppppppppp
+
 165.	(11:38AM) finally got my final output. Still donnot get any default database entey in the category file.
 166.	 Done finally with part2 code.
+
 *------------------ End time 11:40AM , total time consumed=  1 hour and 40 mintues--------------------------*
 
 
@@ -264,48 +312,80 @@ Now time to run the application ….wao finally work on the track. Wao in the na
 
                                          *--------------------------  2021-11-18, 7:56Pm-----------------------*
 . due to my bad health I did not continue my assignment but now I feel good , so agin back to work ,
+
 (7:56PM) Within in a categorycontroller.cs file I added a API (application programing interface) to call the HTTPDelete .  then I implemented the HTTPDelete with delete method in category.js file to add the functionality to the applicatio and call the API.(8:01PM)
+
 ((8:08PM) THEN I ADEED the delete(url) function code , take 10 mintues to type the code after that update the README side by side and puch the commits to the github. Run the application  wao got that big message popup the screen after click on the delete button.(8:25PM)
+
       End time  8:30PM total time: 30mintues.
 
 
 
 
               *-------------------------------  Part-3    Cover type CRDU------------------------------------*
+
                       Start time: 8:33PM, 2021-11-18
+
  (8:35PM)  created a new class under the Sanjnasbooks.model folder/project and typed the same code  with Id and name as I did in the category folder. (8:50Pm)
+
 (8:55Pm) then I I run the command via PM console that was :- “add-migration AddcoverTypeToDb”  the new migration file auto genrated on the screen with lots of data  because a already write the  code in ApplicationDbContext.cs file ,  the file name is :- 
 ----------- 20211120181614_AddCoverTypeToDb.cs----------- (9:00Pm)
+
  (9:05PM)  Add the Covertype to the Repository , first I created a class CovertypeRepository under the Repository file , on the second hand same under Irepository folder created the new Interface IcoverTypeRepository . (9:10Pm)
+
 (9:13PM) entered a litle code under the IcovertypeRepository and added a new using statements to remove the errors, same typed a new code same as category in the CovertypeRepository and add new using statements as well .(9:30PM)
+
 (9:30Pm) open the existed unitOfWork and IunitOfWork file and add the Covertype code same category code, next I run the migration command and update the database to create the CoverType table in the database. (9:40PM)
+
 (9:32PM) wao the new coverTypres table genrated in the sql database.(9:40PM)
+
 Next perform the CRDU operations on covertype.
+
 (9:50Pm) open the layout.cshtml file to add the covertype  on the Navigation bar , at same time I addad the Covertype in the dropdown code. (10:00PM)
+
 (10:01 PM)  take new CoverTypecontroller under the admin->controller folder  , write all required action methods and solve all the error which occur in the covertypecontroller. (10:20Pm)
+
 (10:22 PM) same in admin->view folder created new folder name Covertype , then added a new Index view under It, with selecting the layout page. In index page I copied the code of cayegory Index  view just change the name , next created a another Upsert View under the Covertype folder , this time the UpsertView code is given by Andrew . so work done smoothly. (11:00 Pm)
+
 (11:05PM) created new CoverType.js file under the wwwroot -> js folder pasted the same category.js code just replace the category name with CoverType name. than added the @section scripts under the Index view page for , than run the project ..:) greate run successfully……………(11:23PM)
+
 (11:30PM) next step to apply the code to activate the Edit and delete button , for that create New coverType using The Upser action which I already craeted with Index view so no Need to create it again, because my project working perfect according to the instructions., (11:36PM)
+
 (11:40PM) in the general Views> Shared folder  to added the partial view I I created _createdAndbackToListButton as well as _EditAndBackToListButtom  with @model razor statement. (12:00 PM)  
+
 (12:00 Pm) update the Upsert.cshtml file with given code as well use the @model statement within the code, and use the @title varible . Plus same did some modification in the Index.cshtml  View file (12:26PM)
+
 (12:30PM) Done with all code , now   create a new Upsert POST action method in the  CoverTypeController.cs, added the API(Application Programming Interface) call for HTTPdelete in the CoverTypeController.cs file  (1:00Pm)
+
 (1:00 PM) Next implemented the HTTPDelete with delete method in covertype.js  to added the functionality to the application and call the API. Next step , add the delete functionality in covertype.js file with onclick event to the Delete Function. The remaing delete code is given by Andrew so a typed as it is.(1:25PM)
+
 (1:30 PM) I run the project then added new entery named Action then I delete that entry with delete button to check the button functionality, yup, after deleting the entry new new message popup on the screen. (1:35PM)
+
 Now its too late to sleep so done with the code , need to sleep , 
+
 End time: 1:40Pm, total time spend on this part is :-  5 hours. 
 
 
 20-11-2021, Saturday at 4:23PM-------------------------------------------------*
+
 (4:31Pm) added a new class under the .Model Folder.(4:32PM)
+
 (4:33Pm)   Created class typed the full code which was provided by the Andrew in the slides.(4:41Pm)
+
 (4:41Pm)  open the ApplicatiobDbContext class and added a product line to add the product.cs to the Database.(4:45Pm)
+
 (4:45Pm) Nuget command to add the product into the database I run the command    “add-migration AddProductToDb"  plus run the command to “ update-databse “ to update the databse (4:”6Pm)
+
 (5:00 PM) new file are automaticlly create:
+
  ------------------20211120215758_AddProductToDb ------------------
 (5:00Pm)
+
 (5:02PM)  In the SOE review the new table PRODUCT , now update the Title, ISBN and author  , for that first  I run the command   ” add-migration AddMigrationToProductToDb” , with this commad new file automatical genrated which is ----------20211120221853_AddValidationToProductToDb---------
 Then I update the product class so Title and author are indicate to the required filed due to validation command., everythink going smooth .(5:22PM)
+
 (5:25PM) created new interface under the Irepository folder, named as IproductRepository (5:31PM      -----------------------------------------------Take a break ----------------------------------------------------
+
 End time–(5:40PM)--, total time spend on this part (2 hours)
 
 
@@ -332,7 +412,7 @@ End time–(5:40PM)--, total time spend on this part (2 hours)
 (9:10 Pm) now done with the Assignment 2_part 3 (section 2) (9:12PM)
 
 End time: (9:15 Pm)
-Total time spend on this part: (3 hours)
+Total time spend on this part: (3 hours) Happy :)
 
 
 
