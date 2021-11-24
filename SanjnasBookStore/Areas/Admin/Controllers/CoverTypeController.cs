@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SanjnasBookStore.Areas.Admin.Controllers
 {
     
-      [Area("Admin")]
+        [Area("Admin")]
         public class CoverTypeController : Controller
         {
             private readonly IUnitOfWork _unitOfWork;

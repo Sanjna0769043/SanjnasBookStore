@@ -1,6 +1,5 @@
 ﻿using SanjnasBooks.DataAccess.Repository.IRepository;
 using SanjnasBooks.Models;
-using SanjnasBookStore;
 using SanjnasBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -19,7 +18,8 @@ namespace SanjnasBooks.DataAccess.Repository
             _db = db;
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
-            //Product = new ProductRepository(_db);
+            Product = new ProductRepository(_db);
+
             SP_Call = new SP_Call(_db);
         }
 
@@ -29,8 +29,9 @@ namespace SanjnasBooks.DataAccess.Repository
 
         public ICoverTypeRepository CoverType { get; private set; }
 
-       // public IProductRepository Product { get; private set; }
+        public IProductRepository Product { get; private set; }
 
+       
         public void Dispose()
         {
             _db.Dispose();
