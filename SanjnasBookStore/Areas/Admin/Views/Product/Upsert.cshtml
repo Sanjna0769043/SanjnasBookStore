@@ -1,5 +1,5 @@
 ﻿
-@model  SanjnasBooks.Models.ViewModels.ProductVM
+@model SanjnasBooks.Models.ViewModels.ProductVM
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -116,5 +116,24 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    
+        <script src="https://cdn.tiny.cloud/1/ur40pqrsmqvkx3s04doofsnhxbpaz8agbiokqmonvv8hqf5w/tinymce/5/tinymce.min.js" ></script>
+  
+        <script>
+            tinymce.init({
+                selector: 'textarea',  // change this value according to your HTML
+                plugins: 'lists',
+                menubar: 'files edit format'
+            });
+
+            function validateInput() {
+                if (document.getElementById("uploadBox").value = "") {
+                    swal("Error", "Please select an image", "error");
+                    return false;
+                }
+                return true;
+            }
+        </script>
 }
+    
 
