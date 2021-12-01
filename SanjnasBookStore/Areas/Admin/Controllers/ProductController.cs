@@ -28,7 +28,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
         {
             return View();
         }
-        /*
+        
         public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
@@ -57,7 +57,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             }
             return View(productVM);
         }
-        */
+        
         
         // use HTTP POST to define the post-action method
         [HttpPost]
