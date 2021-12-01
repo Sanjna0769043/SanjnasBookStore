@@ -327,7 +327,9 @@ End time: (9:15 Pm)
 *------------------Total time spend on this part: (3 hours)---------------------------------*
 
 
-
+<-----Start time: 7:21PM-------assignment2 Part3, (section3)--------------------------->
+<7:25PM>craete the Upser.cshtml file under the Area->Admin->view folder, and pasted the given code which given by andrew in 
+assignment2-file, (7:30 PM )
 
 
 
