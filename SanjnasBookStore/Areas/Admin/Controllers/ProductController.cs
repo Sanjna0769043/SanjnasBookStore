@@ -57,6 +57,27 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             }
             return View(productVM);
         }
+        
+        // use HTTP POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                if (product.Id == 0)
+                {
+                    _unitOfWork.Product.Add(product);
+                }
+                else 
+                {
+                    _unitOfWork.Product.Update(product);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(product);
+        } 
 
 
          #region API CALLS
@@ -78,7 +99,7 @@ namespace SanjnasBookStore.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }
-        #endregion */
+        #endregion 
 
     };
 }
