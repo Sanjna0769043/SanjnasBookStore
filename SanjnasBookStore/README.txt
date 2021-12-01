@@ -331,6 +331,16 @@ End time: (9:15 Pm)
 <7:25PM>craete the Upser.cshtml file under the Area->Admin->view folder, and pasted the given code which given by andrew in 
 assignment2-file, (7:30 PM )
 
+(7:30 PM) First I created the new account in tiny.cloud with my student Id, I choose one plugin from the tiny.cloud,
+pasted the script under the @section scripts code under the Upsert.cshtml file. Then I run the code wao, everythink work perfect, 
+I saw a new textbox under the Product field. (8:00 PM)
+
+(8:00 PM) in the Productcontroller.cshtml file I uncomment the code as given in the slides. I donot got any error during this part. 
+Run the application work good  (8:10 Pm)
+
+(8:10 Pm) craetec a new Image folder under the wwwroot folder(8:12Pm)
+
+<---------------------end time (8:13 PM), total spend time on this part (45mintues)----------------------->
 
 
 
