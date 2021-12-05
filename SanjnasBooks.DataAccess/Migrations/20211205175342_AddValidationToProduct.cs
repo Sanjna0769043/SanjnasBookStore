@@ -2,7 +2,7 @@
 
 namespace SanjnasBooks.DataAccess.Migrations
 {
-    public partial class AddvalidationToProductToDb : Migration
+    public partial class AddValidationToProduct : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

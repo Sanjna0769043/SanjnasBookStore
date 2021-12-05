@@ -10,8 +10,8 @@ using SanjnasBookStore.DataAccess.Data;
 namespace SanjnasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211123180950_AddvalidationToProductToDb")]
-    partial class AddvalidationToProductToDb
+    [Migration("20211205175342_AddValidationToProduct")]
+    partial class AddValidationToProduct
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
