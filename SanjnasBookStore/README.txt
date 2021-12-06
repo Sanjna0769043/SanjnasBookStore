@@ -3,7 +3,7 @@ STUDENT ID:0769043
 TOPIC:  SanjnaBookShop
 Professor: Andrew steel
 
-*------------------------------Part 1 start date ( November 2021)---------------------------------*
+*------------------------------Part 1 start date ( 2021  November 9 )---------------------------------*
 1.	10:00”o clock in the morning.
 2.	 my topic is SanjnaBookShop
 3.	(10:02AM)  Now first I create a new folder name SanjnaBookShop in the visiual studio code 2019 according to the given toutorial.(10:02AM)
@@ -142,7 +142,7 @@ Professor: Andrew steel
 102.	 Update-databse
 103.	 (9:02 PM): after the database upadation I review the SQL server in Obejct Explore carefully and run the application.(9:10PM)
 104.	 I am taking dinner break………………….
-             *---------------  (8:40PM to 9:10PM) 8November , consumed time= 1 hour----------------*
+             *---------------  (8:40PM to 9:10PM) 8 November , consumed time= 1 hour----------------*
 
 
 
@@ -172,7 +172,7 @@ Professor: Andrew steel
 
 
 
-                  *---------------------  DATE: (9 Nov 2021), 9:30AM-------------------------*
+                  *---------------------  DATE: (2021 nov 9), 9:30AM-------------------------*
 123.	Start with slide 8 , continues the last day work.  (9:35PM)
 124.	 (9:36PM)  Open the categoryRepositiry.cs file and do some changes on it , according to the instruction I added a new using statements on the file. (9:40PM)
 125.	(9:40 Am)   Open the Icategoryrepository.cs file and modfiy the file as per the tutorial. Like implement the interface to update. Complete all the code and fixed all the error as per the commands and it take almost 25 mintues to write the code.  (9:50PM)
@@ -186,7 +186,7 @@ Professor: Andrew steel
 
 
 
-          *----------------   (10:00 Am), morning time with fresh mind,  10Nov 2021-----------------*
+          *----------------   (10:00 Am), morning time with fresh mind,  2021 Nov 10-----------------*
 
 
 130.	(10:00AM)   Again add a new interface under the Irepository folder name it IunitofWork.cs. 
@@ -212,7 +212,7 @@ Professor: Andrew steel
 
 
 
-      *-----------------------(12 novmber 2021) ( 10AM), morning time----------------------------*
+      *-----------------------(2021 Nov 12) ( 10AM), morning time----------------------------*
 146.	(10:00AM)   Now continue the assignment’s part 2, category CRDU(10:02AM)
 147.	With in a Admin->Controller create a new MVC  controller inside it as   CategoryController.cs. write the all provided code as per the tutorial and solve the error by using statements.(10:07AM)
 148.	(10:08AM)   After that add a new category folder inside the View folder and further category folder added a View->razor view . then one new slide open fille the file name->Index and path of the file(10:15Am)
@@ -240,7 +240,7 @@ Professor: Andrew steel
 
 
 
-15 November 2021, start time -10:00Pm-----------------------------*
+------------------ 2021 November 15 , start time -10:00Pm-----------------------------*
 (10:18PM) to continue the assignment of BookStore  part 2.3
 The last slide 16 was showed the proprer output of the project till the field with Name.(10:23PM)
 
@@ -259,29 +259,34 @@ Add the View category as per the given code. Means Add the IAction to the Contro
 Now time to run the application ….wao finally work on the track. Wao in the navigation category->category find a new category option Move to further code. (11:13PM)
 (11:30Pm)   Added a @section script to thre upsert file as well as commit the github all updates. Run the application wao greate the validation is working .(11:45PM)
 
-   End time- 11:45 Pm,
- total time spent on this part=  1 hours 45 mintues
+   *-------------------End time- 11:45 Pm,---------------------------------*
+ *-----------------total time spent on this part=  1 hours 45 mintues------------------------*
 
                                             
 
-                                         *--------------------------  2021-11-18, 7:56Pm-----------------------*
+  
+  
+  *--------------------------  2021-11-18, 7:56Pm-----------------------*
 . due to my bad health I did not continue my assignment but now I feel good , so agin back to work ,
 (7:56PM) Within in a categorycontroller.cs file I added a API (application programing interface) to call the HTTPDelete .  then I implemented the HTTPDelete with delete method in category.js file to add the functionality to the applicatio and call the API.(8:01PM)
 ((8:08PM) THEN I ADEED the delete(url) function code , take 10 mintues to type the code after that update the README side by side and puch the commits to the github. Run the application  wao got that big message popup the screen after click on the delete button.(8:25PM)
-      End time  8:30PM total time: 30mintues.
+     *-------------------- End time  8:30PM total time: 30mintues----------------------*
 
 
 
 
-              *-------------------------------  Part-3    Cover type CRDU------------------------------------*
-                      Start time: 8:33PM, 2021-11-18
+     *-------------------------------  Part-3 Cover type CRDU------------------------------------*
+    *-----------------------------Start time: 8:33PM, 2021-11-18---------------------------------*
+
  (8:35PM)  created a new class under the Sanjnasbooks.model folder/project and typed the same code  with Id and name as I did in the category folder. (8:50Pm)
 (8:55Pm) then I I run the command via PM console that was :- “add-migration AddcoverTypeToDb”  the new migration file auto genrated on the screen with lots of data  because a already write the  code in ApplicationDbContext.cs file ,  the file name is :- 
 ----------- 20211120181614_AddCoverTypeToDb.cs----------- (9:00Pm)
+
  (9:05PM)  Add the Covertype to the Repository , first I created a class CovertypeRepository under the Repository file , on the second hand same under Irepository folder created the new Interface IcoverTypeRepository . (9:10Pm)
 (9:13PM) entered a litle code under the IcovertypeRepository and added a new using statements to remove the errors, same typed a new code same as category in the CovertypeRepository and add new using statements as well .(9:30PM)
 (9:30Pm) open the existed unitOfWork and IunitOfWork file and add the Covertype code same category code, next I run the migration command and update the database to create the CoverType table in the database. (9:40PM)
 (9:32PM) wao the new coverTypres table genrated in the sql database.(9:40PM)
+
 Next perform the CRDU operations on covertype.
 (9:50Pm) open the layout.cshtml file to add the covertype  on the Navigation bar , at same time I addad the Covertype in the dropdown code. (10:00PM)
 (10:01 PM)  take new CoverTypecontroller under the admin->controller folder  , write all required action methods and solve all the error which occur in the covertypecontroller. (10:20Pm)
@@ -297,7 +302,9 @@ Now its too late to sleep so done with the code , need to sleep ,
 End time: 1:40Pm, total time spend on this part is :-  5 hours. 
 
 
-20-11-2021, Saturday at 4:23PM-------------------------------------------------*
+
+
+*----------------------2021-20-11, Saturday at 4:23PM-------------------------------------------------*
 (4:31Pm) added a new class under the .Model Folder.(4:32PM)
 (4:33Pm)   Created class typed the full code which was provided by the Andrew in the slides.(4:41Pm)
 (4:41Pm)  open the ApplicatiobDbContext class and added a product line to add the product.cs to the Database.(4:45Pm)
@@ -307,12 +314,13 @@ End time: 1:40Pm, total time spend on this part is :-  5 hours.
 (5:00Pm)
 (5:02PM)  In the SOE review the new table PRODUCT , now update the Title, ISBN and author  , for that first  I run the command   ” add-migration AddMigrationToProductToDb” , with this commad new file automatical genrated which is ----------20211120221853_AddValidationToProductToDb---------
 Then I update the product class so Title and author are indicate to the required filed due to validation command., everythink going smooth .(5:22PM)
-(5:25PM) created new interface under the Irepository folder, named as IproductRepository (5:31PM      -----------------------------------------------Take a break ----------------------------------------------------
-End time–(5:40PM)--, total time spend on this part (2 hours)
+(5:25PM) created new interface under the Irepository folder, named as IproductRepository (5:31PM    
+*-------------------------------------------Take a break -----------------------------------------*
+*------------------End time–(5:40PM)--, total time spend on this part (2 hours)--------------------*
 
 
 
-2021-11-23, start time -6:42Pm……………………………………..
+*-------------------------------2021-11-23, start time -6:42Pm--------------------------------*
 (6:49 PM) craetec the class ProductRepository under the Reposiotoy folder ,  first few code I take it from the previous slides the additional one already given by Andrew , solve the error by using statements as well as implemtented the inteface as well. (7:00 PM)
 (7:01 PM) update the UnitOfwork and IunitOfWork files with Product code (7:15PM)
 (7:17 PM) create a new productController under the Area->Admin->Controller folder and perform some CRUD operations., next added the IwebHostEnvironment call  and remove the red error by using the MicroSoft.AspNetCoreHosting statement . (7:22 PM)
@@ -327,7 +335,7 @@ End time: (9:15 Pm)
 *------------------Total time spend on this part: (3 hours)---------------------------------*
 
 
-<-----Start time: 7:21PM-------assignment2 Part3, (section3)--------------------------->
+*--------------Start time: 7:21PM-------assignment2 Part3, (section3)---------------------------*
 <7:25PM>craete the Upser.cshtml file under the Area->Admin->view folder, and pasted the given code which given by andrew in 
 assignment2-file, (7:30 PM )
 
@@ -338,9 +346,9 @@ I saw a new textbox under the Product field. (8:00 PM)
 (8:00 PM) in the Productcontroller.cshtml file I uncomment the code as given in the slides. I donot got any error during this part. 
 Run the application work good  (8:10 Pm)
 
-(8:10 Pm) craetec a new Image folder under the wwwroot folder(8:12Pm)
+(8:10 Pm) craetec a new Image and product folder under the wwwroot folder(8:12Pm)
 
-<---------------------end time (8:13 PM), total spend time on this part (45mintues)----------------------->
+*---------------------end time (8:13 PM), total spend time on this part (45mintues)-----------------------*
 
 
 
